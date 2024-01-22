@@ -13,7 +13,7 @@
 </div>
 <% @three_recent_posts.each do |post| %>
   <div class="custom-post custom-bio">
-    <h3>Post <%= raw "#" + post.id.to_s %></h3>
+    <h3><%= link_to "Post #{post.id}", user_post_path(@user, post) %></h3>
     <p><%= post.text %></p>
     <div class='custom-post-interactions'>
       <span>Comments: <%= post.comments_counter %>,</span>
@@ -21,6 +21,8 @@
     </div>
   </div>
 <% end %>
-<a href="<%= user_posts_path(@user) %>">
-  <button class="custom-pagination">See all posts</button>
-</a>
+<div class="text-center">
+  <%= link_to user_posts_path(@user) do %>
+    <button class="custom-pagination">See all posts</button>
+  <% end %>
+</div>
