@@ -9,13 +9,13 @@ development:
   <<: *default
   database: blog
   username: postgres
-  password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
+  password: whisky
+  host: localhost
+  port: 5432
 
 test:
   <<: *default
   database: blog
-  username: postgres
-  password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
 
 production:
   <<: *default
