@@ -98,6 +98,9 @@ rspec spec --format documentation
 👤 THIERRY NOUMBUH
 - GitHub: [&nbsp; &nbsp; @githubhandle](https://github.com/axcell-0)
 
+👤 SAMUEL LEMMA
+- GitHub: [&nbsp; &nbsp; @githubhandle](https://github.com/sam2if)
+
 
 <!-- FUTURE FEATURES -->
 
