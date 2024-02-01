@@ -101,7 +101,6 @@ rspec spec --format documentation
 👤 SAMUEL LEMMA
 - GitHub: [&nbsp; &nbsp; @githubhandle](https://github.com/sam2if)
 
-
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
