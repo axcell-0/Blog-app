@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   load_and_authorize_resource
+
   def new
     @comment = Comment.new
   end
@@ -9,6 +10,7 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment.user_id = current_user.id
     @comment.post_id = @post.id
+
     if @comment.save
       redirect_to user_post_path(user_id: @post.author_id, id: @post.id)
     else
