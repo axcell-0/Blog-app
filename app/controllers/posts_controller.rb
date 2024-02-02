@@ -17,6 +17,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.author = current_user
+
     if @post.save
       redirect_to user_posts_path(id: current_user.id)
     else
@@ -30,6 +31,7 @@ class PostsController < ApplicationController
     @author.decrement!(:post_counter)
     @post.likes.destroy_all
     @post.destroy!
+
     redirect_to user_posts_path(id: @author.id), notice: 'Post successfully deleted'
   end
 
